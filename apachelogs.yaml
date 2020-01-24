@@ -1,0 +1,11 @@
+# it produces fake apache logs
+apiVersion: v1
+kind: Pod
+metadata:
+  name: apaceh-logs-1
+  labels:
+    app: apache-logs-1
+spec:
+  containers:
+  - name: apache
+    image: edsiper/apache_logs
